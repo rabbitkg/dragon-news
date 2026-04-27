@@ -10,7 +10,7 @@ const LeftSidebar = ({ categories, activeId }) => {
                     categories.news_category.map((category) => {
                         return <li key={category.category_id} className={`
                             
-                            ${activeId === category.category_id ? "bg-pink-300 p-2 rounded-md font-bold text-center text-xl cursor-pointer" : "bg-slate-200 p-2 rounded-md font-bold text-center text-xl cursor-pointer hover:bg-pink-300"} 
+                            ${activeId === category.category_id ? "bg-pink-300 p-2 rounded-md font-bold text-center text-xl cursor-pointer" : "bg-slate-300 p-2 rounded-md font-bold text-center text-xl cursor-pointer hover:bg-pink-300"} 
                             `}>
                                 <Link href={`/category/${category.category_id}`} className='block'>{category.category_name}</Link>
                                 </li>
